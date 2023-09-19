@@ -51,6 +51,6 @@ MDP = {
 }
 ```
 ## OUTPUT:
-
+![Screenshot 2023-09-19 144424](https://github.com/arunraj2002/mdp-representation/assets/75235747/0ac5d5ef-9e58-48ae-bfa7-437fc8c08b8a)
 ## RESULT:
 The result will be the optimized policy that the agent "Staff" should follow to maximize its expected rewards while managing the students in different states and taking appropriate actions.
