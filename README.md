@@ -1,37 +1,56 @@
-# MDP REPRESENTATION
-
+## MDP REPRESENTATION 
 ## AIM:
-Write your aim here
+The aim of this MDP representation is to model the interaction between the agent "Staff" and the environment "Students" in a classroom setting where the agent can take actions like "Teaching" and "Monitoring" in different states.
 
-## PROBLEM STATEMENT:
-
-### Problem Description
-Write your answer here
+## PROBLEM STATEMENT
+The problem is to define an MDP that represents the agent's decision-making process in managing students who can be in states of "sitting," "listening," or "talking."
 
 ### State Space
-Write your answer here
+- "sitting"
+- "listening"
+- "talking"
 
 ### Sample State
-Write your answer here
+A sample state can be "sitting," where the students are sitting quietly.
 
 ### Action Space
-Write your answer here
+- "Teaching"
+- "Monitoring"
 
 ### Sample Action
-Write your answer here
+A sample action can be "Teaching," where the agent engages in teaching activities.
 
 ### Reward Function
-Write your answer here
+The reward function is not explicitly defined in the provided information, but it assigns rewards to state-action pairs based on the agent's goals. It should encourage actions that lead to desired outcomes and discourage unwanted behaviors.
 
 ### Graphical Representation
-Write your answer here
 
-## PYTHON REPRESENTATION:
-Write your code here
 
+## PYTHON REPRESENTATION
+```python
+# Define the states
+states = ["sitting", "listening", "talking"]
+
+# Define the actions
+actions = ["Teaching", "Monitoring"]
+
+# Define the MDP as a dictionary of dictionaries for transition probabilities and rewards
+MDP = {
+    "sitting": {
+        "Teaching": [(0.8, "sitting", 0.0, True), (0.2, "listening", 0.0, False)],
+        "Monitoring": [(0.8, "listening", 0.0, False), (0.2, "sitting", 0.0, True)]
+    },
+    "listening": {
+        "Teaching": [(0.8, "sitting", 0.0, True), (0.2, "talking", 1.0, True)],
+        "Monitoring": [(0.8, "talking", 1.0, True), (0.2, "sitting", 0.0, True)]
+    },
+    "talking": {
+        "Teaching": [(0.8, "listening", 0.0, False), (0.2, "talking", 0.0, True)],
+        "Monitoring": [(0.8, "talking", 0.0, True), (0.2, "listening", 0.0, False)]
+    }
+}
+```
 ## OUTPUT:
-Write your Python output here
 
 ## RESULT:
-Write your output here
-
+The result will be the optimized policy that the agent "Staff" should follow to maximize its expected rewards while managing the students in different states and taking appropriate actions.
