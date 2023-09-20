@@ -24,7 +24,7 @@ A sample action can be "Teaching," where the agent engages in teaching activitie
 The reward function is not explicitly defined in the provided information, but it assigns rewards to state-action pairs based on the agent's goals. It should encourage actions that lead to desired outcomes and discourage unwanted behaviors.
 
 ### Graphical Representation
-
+![WhatsApp Image 2023-09-20 at 16 14 27](https://github.com/arunraj2002/mdp-representation/assets/75235747/b7e6c164-71f2-4e60-8cc5-72b6f33a3942)
 
 ## PYTHON REPRESENTATION
 ```python
