@@ -30,10 +30,8 @@ The reward function is not explicitly defined in the provided information, but i
 ```python
 # Define the states
 states = ["sitting", "listening", "talking"]
-
 # Define the actions
 actions = ["Teaching", "Monitoring"]
-
 # Define the MDP as a dictionary of dictionaries for transition probabilities and rewards
 MDP = {
     "sitting": {
