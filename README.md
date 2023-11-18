@@ -1,4 +1,4 @@
-# <p align="center"> MDP REPRESENTATION 
+# MDP REPRESENTATION 
 ## AIM:
 The aim of this MDP representation is to model the interaction between the agent "Staff" and the environment "Students" in a classroom setting where the agent can take actions like "Teaching" and "Monitoring" in different states.
 
